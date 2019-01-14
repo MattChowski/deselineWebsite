@@ -44,6 +44,38 @@ body {
     color: #ddd;
 }
 
+/* SMALL NAV */
+#mySmallNavItems {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 150px;
+    margin-left: -150px;
+    text-align: center;
+
+    transition: 0.2s ease;
+}
+
+#mySmallNavItems li {
+    padding: 1rem;
+    transition: 0.2s ease;
+}
+
+#mySmallNavItems a {
+    color: #fff;
+}
+
+#main-small-nav-button {
+    position: fixed;
+    padding: 20px;
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+    display: none;
+
+    transition: 0.2s ease;
+}
+
 /* Side Buttons */
 #myButtons {
     position: fixed;
@@ -110,7 +142,11 @@ body {
 /* ------------- */
 @media only screen and (max-width: 768px) {
     #main-nav {
-        visibility: hidden;
+        display: none;
+    }
+
+    #main-small-nav-button {
+        display: initial;
     }
 
     #logoSection div {
