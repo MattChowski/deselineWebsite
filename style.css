@@ -1,0 +1,125 @@
+
+html {
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+/* Bootstrap changes */
+.container-fluid {
+    padding: 0px;
+}
+.col-md {
+    padding: 0px;
+}
+
+/* NAVBAR Style */
+#myNavItems {
+    position: fixed;
+    top: 80px;
+}
+
+#myNavItems li {
+    padding: 1rem;
+    transition: 0.2s ease;
+}
+
+#myNavItems li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+#myNavItems a {
+    color: #fff;
+}
+
+#myNavItems a:hover {
+    color: #ddd;
+}
+
+/* Side Buttons */
+#myButtons {
+    position: fixed;
+    right: 0;
+    top: 50%;
+}
+
+.myArrows {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.2s ease;
+}
+
+.myArrows:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.mySingleArrow {
+    width: 3rem;
+    line-height: 3rem;
+}
+
+.mySingleArrow:hover {
+    cursor: pointer;
+}
+
+/* LOGO SECTION */
+#logoSection div {
+    position: fixed;
+    right: 0;
+    padding: 0px 30px;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#logoSection hr {
+    position: fixed;
+    top: 80px;
+    margin: 0;
+    width: 100%;
+    height: 1px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+}
+
+/* IMAGES STYLE */
+#myImages {
+    overflow: auto;
+}
+#myImages img {
+    min-height: 100vh;
+    object-fit: cover;
+}
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+@media only screen and (max-width: 768px) {
+    #main-nav {
+        visibility: hidden;
+    }
+
+    #logoSection div {
+        position: fixed;
+        left: 50%;
+        min-width: 300px;
+        padding: 10px 0px 0px 0px;
+        transform: translate(-50%);
+
+        font-size: 40px;
+    }
+}
