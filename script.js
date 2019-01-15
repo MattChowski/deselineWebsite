@@ -3,10 +3,14 @@ var arrowDown = document.getElementById("arrowDown")
 var arrowUp = document.getElementById("arrowUp");
 var menuButton = document.getElementById("main-small-nav-button");
 var closeMenu = document.getElementById("closeMenuButton");
+var allContent = document.getElementById("all-content");
+var pageEntrance = document.getElementById("page-entrance");
 
 var scrollHolder = 0;
 
+/*---------------*/
 /* ALL LISTENERS */
+/*---------------*/
 arrowDown.addEventListener('click', scrollFuncDown);
 arrowUp.addEventListener('click', scrollFuncUp);
 window.onload = init;
@@ -14,10 +18,15 @@ window.onwheel = function() {return false};
 menuButton.addEventListener('click', openSideMenu);
 closeMenu.addEventListener('click', closeSideMenu);
 
-//Function that will scroll all the way up top
+
+/*-----------*/
+/* FUNCTIONS */
+/*-----------*/
 function init() {
     window.scrollTo(0, 0);
-    console.log("should scroll")
+    setTimeout(function() {pageEntrance.style.opacity = 1}, 500);
+    setTimeout(function() {pageEntrance.style.opacity = 0}, 2000);
+    setTimeout(function() {allContent.style.opacity = 1}, 2500);
 }
 
 function openSideMenu() {

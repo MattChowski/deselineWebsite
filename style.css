@@ -12,7 +12,29 @@ body {
     box-sizing: border-box;
 }
 
+#page-entrance {
+    position: fixed;
+    width: 100vw;
+    line-height: 100vh;
+    text-align: center;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.5);
+
+    font-family: 'Dancing Script', cursive;    
+    font-size: 5rem;
+
+    opacity: 0;
+    transition: 1s ease;
+}
+
+#all-content {
+    opacity: 0;
+    transition: 1s ease;
+}
+
+/*-------------------*/
 /* Bootstrap changes */
+/*-------------------*/
 .container-fluid {
     padding: 0px;
 }
@@ -20,7 +42,9 @@ body {
     padding: 0px;
 }
 
+/*--------------*/
 /* NAVBAR Style */
+/*--------------*/
 #myNavItems {
     position: fixed;
     top: 80px;
@@ -44,7 +68,9 @@ body {
     color: #ddd;
 }
 
+/*-----------*/
 /* SMALL NAV */
+/*-----------*/
 #mySmallNavItems {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
@@ -80,7 +106,9 @@ body {
     transition: 0.2s ease;
 }
 
+/*--------------*/
 /* Side Buttons */
+/*--------------*/
 #myButtons {
     position: fixed;
     right: 0;
@@ -107,7 +135,9 @@ body {
     cursor: pointer;
 }
 
+/*--------------*/
 /* LOGO SECTION */
+/*--------------*/
 #logoSection div {
     position: fixed;
     right: 0;
@@ -132,7 +162,9 @@ body {
     border: none;
 }
 
+/*--------------*/
 /* IMAGES STYLE */
+/*--------------*/
 #myImages {
     overflow: auto;
 }
